@@ -12,9 +12,5 @@ for i in range(n):
 # a_sort = sorted(array)
 array.sort()
 
-for y,x in array:
+for y, x in array:
     print(x,y)
-    
-
-
-
