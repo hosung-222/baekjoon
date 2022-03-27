@@ -16,12 +16,12 @@ for _ in range(n):
         if len(deq) == 0:
             print(-1)
         else:
-            print(deq.popleft)
+            print(deq.popleft())
     elif c[0] == 'pop_back':
         if len(deq) == 0:
             print(-1)
         else:
-            print(deq.pop)
+            print(deq.pop())
     elif c[0] == 'size':
         print(len(deq))
     elif c[0] == 'empty':
