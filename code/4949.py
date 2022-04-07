@@ -5,7 +5,6 @@ while True:
         break
     
     stack = []
-    t = True
     for i in s:
         if i == '(' or i == '[':
             stack.append(i)
@@ -13,14 +12,18 @@ while True:
             if len(stack) !=0 and stack[-1] == '[':
                 stack.pop()
             else:
-                t = False
+                stack.append(i)
+                break
+
         elif i == ')':
             if len(stack) !=0 and stack[-1] == '(':
                 stack.pop()
             else:
-                t = False  
+                stack.append(i)
+                break
 
-    if t == True:
+    if len(stack) == 0:
         print('yes')         
     else:
         print('no')
+
