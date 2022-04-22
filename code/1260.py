@@ -9,17 +9,6 @@ def dfs(v):
         if visit[i] == False:
             dfs(i)
 
-# def bfs(n):
-#     visit[n] == True
-#     queue = deque([n])
-#     while queue:
-#         v = queue.popleft()
-#         print(v, end =' ')
-#         for i in graph[v]:
-#             if not visit[i]:
-#                 queue.append(i)
-#                 visit[i] = True
-
 def bfs(n):
     visit[n] = True
     queue = deque([n])
@@ -39,11 +28,11 @@ for i in range(m):
     v1,v2 = map(int,input().split())
     graph[v1].append(v2)
     graph[v2].append(v1)
-print(graph)
+
 for i in range(1, n+1):
     graph[i].sort()
 
-print(graph)
+
 visit = [False] * (n+1)
 dfs(v)
 print()
