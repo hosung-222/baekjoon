@@ -16,4 +16,4 @@ for i in range(m):
 result.sort()
 print(len(result))
 for i in result:
-    print(i)
+    print(i,end = '')
