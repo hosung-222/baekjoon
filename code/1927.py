@@ -1,7 +1,7 @@
 import heapq
 import sys
-
-n = sys.stdin.readline
+input = sys.stdin.readline
+n = int(input())
 heap = []
 for _ in range(n):
     x = int(input())
