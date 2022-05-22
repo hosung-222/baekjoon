@@ -10,8 +10,8 @@ for i in range(n):
     time[i][0] = x
     time[i][1] = y
 
-time.sort(key= lambda x: x[0])
-time.sort(key= lambda x : x[1])
+time.sort(key= lambda x: x[0]) #시작시간순으로 정렬
+time.sort(key= lambda x : x[1]) # 끝나는 시간순으로 정렬
 
 cnt = 0
 endTime = 0
