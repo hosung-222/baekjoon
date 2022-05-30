@@ -24,5 +24,6 @@ def solution (x,y,n):
 
 solution(0,0,n)
 print(result.count(0))
-print(result.count(0))
+print(result.count(1))
 
+#same q1992
