@@ -1,5 +1,8 @@
 #최대 힙
 import heapq
+import sys
+input = sys.stdin.readline
+
 arr = []
 n = int(input())
 
@@ -14,4 +17,3 @@ for i in range(n):
     
     else:
         heapq.heappush(arr,-x)
-
