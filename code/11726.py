@@ -1,7 +1,8 @@
 # 2*n 타일링
+import sys
+input = sys.stdin.readline
 n =  int(input())
 sol = [0]*n
-
 
 for i in range(1,n+1):
     if i == 1:
@@ -12,4 +13,4 @@ for i in range(1,n+1):
         sol[i-1] = sol[i-2] + sol[i-3]
     
 
-print(sol[-1])
+print(sol[-1]%10007)
