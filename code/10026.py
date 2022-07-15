@@ -29,7 +29,7 @@ for i in range(n):
         if visit[i][j] == 0:
             bfs(i,j)
             cnt += 1
-print(cnt,end='')
+print(cnt,end=' ')
 
 for i in range(n):
     for j in range(n):
