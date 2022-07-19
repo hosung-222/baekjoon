@@ -6,16 +6,13 @@ n, k = map(int,input().split())
 coin = []
 for i in range(n):
     coin.append(int(input()))
-i = -1
+coin.sort(reverse=True)
 cnt = 0
-while True:
-    if coin[i] == k:
-        print(cnt+1)
-        break
-    elif coin[i] < k:
-        k -= coin[i]
-        i = 0
-        cnt += 1
-    i -= 1
 
-
+for c in coin:
+    if k >= c:
+        cnt += k//c
+        k %= c
+        if k<= 0:
+            break
+print(cnt)
